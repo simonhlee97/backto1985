@@ -4,7 +4,8 @@ class HomeComponent extends Component {
     render() {
         return (
             <div>
-                <h1>Home Component</h1>
+                <h1>Twin Valley High School - est. 1945</h1>
+                
             </div>
         );
     }
