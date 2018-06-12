@@ -10,7 +10,7 @@ import Typography from '@material-ui/core/Typography';
 
 const styles = {
     card: {
-        maxWidth: 345,
+        maxWidth: 300,
     },
     media: {
         height: 0,
@@ -25,16 +25,15 @@ function SimpleMediaCard(props) {
             <Card className={classes.card}>
                 <CardMedia
                     className={classes.media}
-                    image="/static/images/cards/contemplative-reptile.jpg"
-                    title="Contemplative Reptile"
+                    image="../images/battle_of_bands.png"
+                    title="Battle of the Bands"
                 />
                 <CardContent>
                     <Typography gutterBottom variant="headline" component="h2">
-                        Lizard
+                        Battle of the Bands
                     </Typography>
                     <Typography component="p">
-                        Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                        across all continents except Antarctica
+                        Next Friday, June 1, Gymnasium
                     </Typography>
                 </CardContent>
                 <CardActions>

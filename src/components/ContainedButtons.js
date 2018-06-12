@@ -24,7 +24,8 @@ function ContainedButtons(props) {
     const { classes } = props;
     return (
         <div style={buttStyle}>
-            <h1>Twin Valley High School</h1>
+            <h1>Hill Valley High School</h1>
+            <h3>est. 1955</h3>
             <Button variant="contained" color="primary" className={classes.button}>
                 <Link style={anchorStyle} to="/">Home</Link>
             </Button>
