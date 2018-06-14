@@ -7,26 +7,30 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import '../images/battle_of_bands.png';
+import Bands from '../images/battle_of_bands.png';
+
+// const newsPad = {
+//     marginBottom: 100
+// }
 
 const styles = {
     card: {
-        maxWidth: 350,
+        maxWidth: 360,
     },
     media: {
-        height: 9,
-        paddingTop: 16, // 16:9
+        height: 129,
+        paddingTop: 56
     },
 };
 
-function SimpleMediaCard(props) {
+function NewsCard(props) {
     const { classes } = props;
     return (
         <div>
             <Card className={classes.card}>
                 <CardMedia
                     className={classes.media}
-                    image="../images/battle_of_bands.png"
+                    image={Bands}
                     title="Battle of the Bands"
                 />
                 <CardContent>
@@ -34,7 +38,7 @@ function SimpleMediaCard(props) {
                         Battle of the Bands
                     </Typography>
                     <Typography component="p">
-                        Next Friday, June 1
+                        October 25, 1985
                         <br />Gymnasium
                     </Typography>
                 </CardContent>
@@ -51,8 +55,8 @@ function SimpleMediaCard(props) {
     );
 }
 
-SimpleMediaCard.propTypes = {
+NewsCard.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(SimpleMediaCard);
+export default withStyles(styles)(NewsCard);

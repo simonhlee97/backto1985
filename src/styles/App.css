@@ -1,9 +1,56 @@
 
+html, body {
+	height: 100%;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+    /* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 30%;
+    padding: 5px;
+    line-height: 28px;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.site-footer {
+    background: #3c3ecc;
+    width: 100%;
+    margin-top: 28px;
+    color: #ffffff;
+    padding-top: 2.2em;
+    padding-bottom: 1.1em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 250px;
+    text-decoration: azure;
+    text-decoration: none;
+
+}
+
 .container {
     max-width: 100%;
-    margin: 1 auto;
+    margin-top: 2em;
+    margin-bottom: 5em;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 2em;
+    padding-bottom: 5em;
     padding-left: 4em;
     padding-right: 4em;
     text-align: center;
 }
+
+.links a:hover, nav a:focus {
+    color: rgba(255,255,255, 1.0);
+    text-decoration: none;
+  }

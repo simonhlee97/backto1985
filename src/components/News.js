@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
-import SimpleMediaCard from '../MaterialUI/SimpleMediaCard';
+import NewsLayout from './NewsLayout';
 
+const newsCenter = {
+    textAlign: 'center'
+}
 class News extends Component {
     render() {
         return (
-            <div>
+            <div style={newsCenter}>
+                
                 <h1>News</h1>
-                <SimpleMediaCard />
+
+                <NewsLayout />
 
             </div>
         );

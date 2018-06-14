@@ -1,21 +1,40 @@
 import React from 'react';
+import SimpleModal from '../MaterialUI/SimpleModal';
+import '../styles/socialIcon.css';
+import {Link} from 'react-router-dom';
 
-const footerStyle = {
-    position: 'fixed',
-    left: 0,
-    bottom: 0,
-    width: '100%',
-    backgroundColor: 'red',
-    color: 'white',
-    textAlign: 'center'
-}
+
 const Footer = () => {
     return (
-        <div style={footerStyle}>
-            <p>copyright 2018 | Links: </p>
-            <p>social media links | privacy policy</p>
-            <p>Twin Valley High School: 100 Main St.</p>
+        
+        <div className="site-footer row">
+            <div className="column">
+                <Link to='/' className="fa fa-facebook"></Link>
+                <Link to='/' className="fa fa-twitter"></Link><br />
+                <Link to='/' className="fa fa-google"></Link>
+                <Link to='/' className="fa fa-youtube"></Link>
+            </div>
+            <div className="column links">
+                Twin Valley High School<br/>
+                100 Main Street<br />
+                Twin Valley, California, 99999<br />
+                (899) 555-5555<br />
+                email@twinvalley.hs.edu<br />
+                <SimpleModal /><br />
+                
+                <Link to='https://github.com/'>Repo: <i class="fab fa-github-square fa-2x"></i></Link>
+                
+            </div>
+
+            <div className="column">
+                home<br />
+                academics<br />
+                athletics<br />
+                events<br />
+                privacy policy<br />
+            </div>
         </div>
+
     );
 };
 

@@ -1,0 +1,67 @@
+.wrapper {
+    height: 100%;
+    line-height: 24px;
+    padding: 1em;
+    display: grid;
+    grid-gap: 17px;
+    background-color: rgb(86, 154, 231);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10% 20% 20% 20% 30%;
+    grid-template-areas: 
+        "h h h"
+        "hi hi hi"
+        "ma mi mi"
+        "pr pr strick"
+        "alums al george";
+}
+.wrapper > div {
+    background-color: #fff;
+    border: 1px solid black;
+    padding: 1em;
+}
+
+.mySpan {
+    color: rgb(70, 80, 218);
+}
+
+.header {
+    grid-area: h;
+    font-size: 23px;
+    text-align: center;
+}
+.history {
+    grid-area: hi;
+    text-align: left;
+
+}
+
+.marty {
+    grid-area: ma;
+}
+
+.mission {
+    grid-area: mi;
+    text-align: left;
+
+}
+
+.principal {
+    grid-area: pr;
+    text-align: left;
+
+}
+
+.strickland {
+    grid-area: strick;
+    text-align: left;
+}
+
+.alumni {
+    grid-area: al;
+}
+.alums {
+    grid-area: alums;
+}
+.george {
+    grid-area: george;
+}
