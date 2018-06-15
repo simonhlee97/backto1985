@@ -5,6 +5,9 @@ import Typography from '@material-ui/core/Typography';
 import Modal from '@material-ui/core/Modal';
 import Button from '@material-ui/core/Button';
 
+const aboutBtn = {
+    color: '#DDDDDD'
+}
 function rand() {
     return Math.round(Math.random() * 20) - 10;
 }
@@ -50,7 +53,7 @@ class SimpleModal extends React.Component {
             <div>
                 <Typography gutterBottom></Typography>
 
-                <Button onClick={this.handleOpen}>About this project</Button>
+                <Button onClick={this.handleOpen}><span style={aboutBtn}>About this project</span></Button>
                 
                 <Modal
                     aria-labelledby="simple-modal-title"
@@ -67,7 +70,7 @@ class SimpleModal extends React.Component {
                             
                             <p><a href="https://github.com/facebook/create-react-app">create-react-app (v. 16.4.0)</a></p>
                             <p><a href="https://reacttraining.com/react-router/web/guides/philosophy">react-router-dom (v. 4.3.1)</a></p>
-                            <p><a href="material-ui.com">material-UI</a></p>
+                            <p><a href="https://material-ui.com">material-UI</a></p>
                             <p><a href="https://learncssgrid.com/">CSS Grid</a></p>
                             <p><a href="https://fontawesome.com/">Font-Awesome Icons</a></p>
                             <p><a href="https://fonts.google.com/">Google-Fonts</a></p>

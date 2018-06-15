@@ -3,7 +3,9 @@ import SimpleModal from '../MaterialUI/SimpleModal';
 import '../styles/socialIcon.css';
 import {Link} from 'react-router-dom';
 
-
+const iconStyle = {
+    color: '#DDDDDD'
+}
 const Footer = () => {
     return (
         
@@ -15,14 +17,13 @@ const Footer = () => {
                 <Link to='/' className="fa fa-youtube"></Link>
             </div>
             <div className="column links">
-                Twin Valley High School<br/>
+                Hill Valley High School<br/>
                 100 Main Street<br />
-                Twin Valley, California, 99999<br />
-                (899) 555-5555<br />
-                email@twinvalley.hs.edu<br />
+                Hill Valley, California, 99999<br />
+                (000) 555-5555<br />
+                email@HillValley.hs.edu<br />
                 <SimpleModal /><br />
                 
-                <Link to='https://github.com/'>Repo: <i class="fab fa-github-square fa-2x"></i></Link>
                 
             </div>
 
@@ -31,7 +32,9 @@ const Footer = () => {
                 academics<br />
                 athletics<br />
                 events<br />
-                privacy policy<br />
+                <a href="https://github.com/hillvalley" style={iconStyle}>
+                    <i class="fab fa-github-square fa-3x"></i>
+                </a>
             </div>
         </div>
 

@@ -25,16 +25,16 @@ class App extends Component {
                     
                     <div className="container">
                         
-                        <Switch>
-                            <Route exact path="/" component={Home} />
-                            <Route path="/about" component={About} />
-                            <Route path="/news" component={News} />
-                            <Route path="/login" component={Login} />
-                            <Route path="/teacher" component={TeacherPortal} />
-                            <Route path="/gradebook" component={GradeBook} />
-                            <Route path="/allclasses" component={AllClasses} />
-                            <Route component={NoMatch} />
-                        </Switch>
+                            <Switch>
+                                <Route exact path="/" component={Home} />
+                                <Route path="/about" component={About} />
+                                <Route path="/news" component={News} />
+                                <Route path="/login" component={Login} />
+                                <Route path="/teacher" component={TeacherPortal} />
+                                <Route path="/gradebook" component={GradeBook} />
+                                <Route path="/allclasses" component={AllClasses} />
+                                <Route component={NoMatch} />
+                            </Switch>
 
                     </div>
                 
