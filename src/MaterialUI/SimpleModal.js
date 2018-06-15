@@ -74,6 +74,7 @@ class SimpleModal extends React.Component {
                             <p><a href="https://learncssgrid.com/">CSS Grid</a></p>
                             <p><a href="https://fontawesome.com/">Font-Awesome Icons</a></p>
                             <p><a href="https://fonts.google.com/">Google-Fonts</a></p>
+                            <p><a href="http://reactcommunity.org/react-transition-group/">React Transition Group (for animations)</a></p>
                         </Typography>
 
                     </div>
