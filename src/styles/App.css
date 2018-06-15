@@ -53,4 +53,13 @@ html, body {
 .links a:hover, nav a:focus {
     color: rgba(255,255,255, 1.0);
     text-decoration: none;
-  }
+}
+
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 250ms ease-in;
+}

@@ -32,8 +32,8 @@ const Footer = () => {
                 academics<br />
                 athletics<br />
                 events<br />
-                <a href="https://github.com/hillvalley" style={iconStyle}>
-                    <i class="fab fa-github-square fa-3x"></i>
+                <a href="https://github.com/simonhlee97/backto1985" style={iconStyle}>
+                    <i className="fab fa-github-square fa-3x"></i>
                 </a>
             </div>
         </div>
