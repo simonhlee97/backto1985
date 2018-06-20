@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import '../styles/LoginStyle.css';
-
 const loginForm = {
     marginTop: '1em',
     marginBottom: '1em'
 }
-
-
 class LoginComponent extends Component {
     render() {
         return (
@@ -24,7 +21,4 @@ class LoginComponent extends Component {
         );
     }
 }
-
-
-
 export default LoginComponent;
