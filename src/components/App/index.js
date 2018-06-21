@@ -13,13 +13,12 @@ import HomePage from '../Home';
 import Footer from '../Footer';
 import About from '../About';
 import News from '../News';
-
-
 import AccountPage from '../Account';
 import withAuthentication from '../Session/withAuthentication';
 import * as routes from '../../constants/routes';
 
 import './index.css';
+import GradeBook from '../TeacherPort/GradeBook';
 
 const App = () =>
   <Router>
@@ -37,6 +36,8 @@ const App = () =>
         <Route exact path={routes.ACCOUNT} component={() => <AccountPage />} />
         <Route exact path={routes.ABOUT} component={() => <About />} />
         <Route exact path={routes.NEWS} component={() => <News />} />
+        <Route exact path={routes.GRADEBOOK} component={() => <GradeBook />} />
+
 
 
         <hr/>

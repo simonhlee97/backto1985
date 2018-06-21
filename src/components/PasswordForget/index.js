@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { auth } from '../../firebase';
 import * as routes from '../../constants/routes';
-
+import '../../styles/Button.css';
 const PasswordForgetPage = () =>
   <div>
     <h1>PasswordForget</h1>
@@ -56,9 +56,11 @@ class PasswordForgetForm extends Component {
           type="text"
           placeholder="Email Address"
         />
-        <button disabled={isInvalid} type="submit">
+        <p />
+        <button className="btn" disabled={isInvalid} type="submit">
           Reset My Password
         </button>
+        <p />
 
         { error && <p>{error.message}</p> }
       </form>

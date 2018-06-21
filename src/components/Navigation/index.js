@@ -17,7 +17,7 @@ const Navigation = () =>
   </AuthUserContext.Consumer>
 
 const NavigationAuth = () =>
-    <div style={buttStyle}>
+    <div className="navbuttons" style={buttStyle}>
         <h1>Hill Valley High School</h1>
         <h3>est. 1940</h3>
 
@@ -25,7 +25,7 @@ const NavigationAuth = () =>
             <Link style={anchorStyle} to={routes.LANDING}>Home</Link>
         </Button>
 
-        <Button variant="contained" color="primary" >
+        <Button  variant="contained" color="primary" >
             <Link style={anchorStyle} to={routes.HOME}>Portal</Link>
         </Button>
 
@@ -40,16 +40,14 @@ const NavigationAuth = () =>
         <Button variant="contained" color="primary" >
             <Link style={anchorStyle} to={routes.NEWS}>News</Link>
         </Button>
-        <Button variant="contained" color="primary" >
-            <Link style={anchorStyle} to={routes.SIGN_IN}>Sign In</Link>
-        </Button>
+        
         <SignOutButton />
     </div>
 
 const NavigationNonAuth = () => {
     // const { classes } = props;
     return (
-        <div style={buttStyle}>
+        <div className="navbuttons" style={buttStyle}>
             <h1>Hill Valley High School</h1>
             <h3>est. 1940</h3>
 
@@ -78,7 +76,8 @@ const anchorStyle = {
 const buttStyle = {
     textAlign: 'center',
     width: '100%',
-    paddingTop: '16px'
+    paddingTop: '16px',
+    paddingBottom: '1em'
 };
 
 const styles = theme => ({

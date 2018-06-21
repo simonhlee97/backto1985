@@ -75,6 +75,7 @@ class SimpleModal extends React.Component {
                             <p><a href="https://fontawesome.com/">Font-Awesome Icons</a></p>
                             <p><a href="https://fonts.google.com/">Google-Fonts</a></p>
                             <p><a href="http://reactcommunity.org/react-transition-group/">React Transition Group (for animations)</a></p>
+                            <p>I deployed this app to Firebase. I also used Firebase Authentication for the sign-up, sign-in, password reset.</p> 
                         </Typography>
 
                     </div>

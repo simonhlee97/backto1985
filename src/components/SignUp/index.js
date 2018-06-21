@@ -3,7 +3,7 @@ import {
   Link,
   withRouter,
 } from 'react-router-dom';
-
+import '../../styles/Button.css';
 import { auth, db } from '../../firebase';
 import * as routes from '../../constants/routes';
 
@@ -87,28 +87,28 @@ class SignUpForm extends Component {
           type="text"
           placeholder="Full Name"
         />
-        <br />
+        <p />
         <input
           value={email}
           onChange={event => this.setState(updateByPropertyName('email', event.target.value))}
           type="text"
           placeholder="Email Address"
         />
-        <br />
+        <p />
         <input
           value={passwordOne}
           onChange={event => this.setState(updateByPropertyName('passwordOne', event.target.value))}
           type="password"
           placeholder="Password"
         />
-            <br />
+        <p />
         <input
           value={passwordTwo}
           onChange={event => this.setState(updateByPropertyName('passwordTwo', event.target.value))}
           type="password"
           placeholder="Confirm Password"
-        /><br />
-        <button disabled={isInvalid} type="submit">
+        /><p />
+        <button className="btn" disabled={isInvalid} type="submit">
           Sign Up
         </button>
 

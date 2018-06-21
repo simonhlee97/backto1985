@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-
 import { SignUpLink } from '../SignUp';
 import { PasswordForgetLink } from '../PasswordForget';
 import { auth } from '../../firebase';
@@ -73,18 +72,17 @@ class SignInForm extends Component {
           type="text"
           placeholder="Email Address"
         />
-        <br />
+        <p />
         <input
           value={password}
           onChange={event => this.setState(updateByPropertyName('password', event.target.value))}
           type="password"
           placeholder="Password"
         />
-        <br />
-        <button disabled={isInvalid} type="submit">
-          Sign In
-        </button>
-
+        <p />
+        
+        <button className="btn" disabled={isInvalid} type="submit">Sign In</button>
+        
         { error && <p>{error.message}</p> }
       </form>
     );

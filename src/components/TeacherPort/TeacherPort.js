@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 // import FolderList from './FolderList';
-import '../styles/cssgrid.css';
-import strickland from '../images/strickland.png';
+import '../../styles/teacherportal.css';
+import strickland from '../../images/strickland.png';
 import {Link} from 'react-router-dom';
 
-class TeacherPortal extends Component {
+class TeacherPort extends Component {
     render() {
         return (
             <div>
@@ -26,4 +26,4 @@ class TeacherPortal extends Component {
     }
 }
 
-export default TeacherPortal;
+export default TeacherPort;
