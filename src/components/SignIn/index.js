@@ -5,6 +5,7 @@ import { SignUpLink } from '../SignUp';
 import { PasswordForgetLink } from '../PasswordForget';
 import { auth } from '../../firebase';
 import * as routes from '../../constants/routes';
+import './SigninStyle.css';
 
 const SignInPage = ({ history }) =>
   <div>
@@ -72,12 +73,14 @@ class SignInForm extends Component {
           type="text"
           placeholder="Email Address"
         />
+        <br />
         <input
           value={password}
           onChange={event => this.setState(updateByPropertyName('password', event.target.value))}
           type="password"
           placeholder="Password"
         />
+        <br />
         <button disabled={isInvalid} type="submit">
           Sign In
         </button>

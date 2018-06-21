@@ -3,7 +3,7 @@ import HillValley from '../images/hillvalley.png';
 import Img from 'react-image';
 
 const imageStyle = {
-    height: '25%',
+    height: '20%',
     width: 'auto'
 }
 class HomeComponent extends Component {

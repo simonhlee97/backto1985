@@ -1,9 +1,17 @@
 import React from 'react';
+import HillValley from '../../images/hillvalley.png';
+import Img from 'react-image';
+
+const imageStyle = {
+    height: '20%',
+    width: 'auto'
+}
 
 const LandingPage = () =>
   <div>
-    <h1>Landing</h1>
-    <p>The Landing Page is open to everyone, even though the user isn't signed in.</p>
+        <h1>Welcome</h1>
+        <Img src={HillValley} style={imageStyle} />
   </div>
 
 export default LandingPage;
+

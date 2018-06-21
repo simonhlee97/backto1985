@@ -60,22 +60,3 @@ NewsLayout.propTypes = {
 };
 
 export default withStyles(styles)(NewsLayout);
-
-
-
-
-
-
-
-// return (
-//     <div className={classes.root}>
-//         <Grid container spacing={24}>
-//             <Grid item xs={12}>
-//                 <NewsCard /><NewsCard /><NewsCard />
-//             </Grid>
-
-//         </Grid>
-
-
-//     </div>
-// );

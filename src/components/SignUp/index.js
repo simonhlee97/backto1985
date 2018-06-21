@@ -87,24 +87,27 @@ class SignUpForm extends Component {
           type="text"
           placeholder="Full Name"
         />
+        <br />
         <input
           value={email}
           onChange={event => this.setState(updateByPropertyName('email', event.target.value))}
           type="text"
           placeholder="Email Address"
         />
+        <br />
         <input
           value={passwordOne}
           onChange={event => this.setState(updateByPropertyName('passwordOne', event.target.value))}
           type="password"
           placeholder="Password"
         />
+            <br />
         <input
           value={passwordTwo}
           onChange={event => this.setState(updateByPropertyName('passwordTwo', event.target.value))}
           type="password"
           placeholder="Confirm Password"
-        />
+        /><br />
         <button disabled={isInvalid} type="submit">
           Sign Up
         </button>

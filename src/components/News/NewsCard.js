@@ -7,7 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import Bands from '../images/battle_of_bands.png';
+import Bands from '../../images/battle_of_bands.png';
 
 // const newsPad = {
 //     marginBottom: 100
